@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Registration</h2>
+
+    <form action="" method="post">
+
+        <p>Name</p>
+        <input type="text" name="vorname" placeholder="Vorname" required>
+        <input type="text" name="nachname" placeholder="Nachname" required>
+
+        <p>Telefonnummer</p>
+        <select name="" id="">
+            <option value="usa">+1</option>
+            <option value="au">+43</option>
+            <option value="de">+49</option>
+            <!--sollen wir das so machen ??????? -->
+        </select>
+
+        
+        <input type="tel" name="telnummer" placeholder="664 123 456 78" required>
+
+        <p>Email-Adresse</p>
+        <input type="email" name="email" placeholder="asd@mail.com" required>
+
+        <p>Adresse</p>
+        <input type="text" name="adresse" placeholder="Strasse, Hausnummer" required>
+        <input type="text" name="stadt" placeholder="Stadt" required>
+        <input type="text" name="plz" placeholder="Postleitzahl" pattern= "[0-9]+" required>
+        <input type="text" name="land" placeholder="Land" required>
+
+        <p>Password</p>
+        <p>Muss eine Zahl, groß und klein Buchstabe beinhalten!</p>
+        <input 
+        type="password" 
+        minlength="10" 
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+        title="Muss eine Zahl, groß und klein Buchstabe beinhalten" required>
+
+        <input type="submit" name="registrieren" value="Registrieren">
+
+        <p>Haben Sie schon einen Account?</p>
+        <a href="https://www.google.com/">Weiter zu Login!</a>
+        
+
+    </form>
+    
+</body>
+</html>
