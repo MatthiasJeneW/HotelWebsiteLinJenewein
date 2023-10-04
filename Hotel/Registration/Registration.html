@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Registration.css">
+
+</head>
+<body>
+
+<div class="container">
+
+  <form class="form" action="" method="post">
+    <h1 class="form_title">Registrieren</h1>
+    <div class="label-input-combi">
+      <label class="form_text" for="geschlecht" hidden>Anrede</label>
+      <select class="form_input" name="geschelcht" id="geschlecht">
+        <option value="M">Herr</option>
+        <option value="W">Frau</option>
+      </select>
+    </div>
+    <div class="label-input-combi">
+      <label class="form_text" for="vorname" hidden>Vorname</label>
+      <input class="form_input" type="text" id="vorname" name="vorname" placeholder="Vorname" required>
+    </div>
+    <div class="label-input-combi">
+      <label class="form_text" for="nachname" hidden>Nachname</label>
+      <input class="form_input" type="text" id="nachname" name="nachname" placeholder="Nachname" required>
+    </div>
+
+    <div class="label-input-combi">
+      <label class="form_text" for="mail" hidden>E-Mail Adresse</label>
+      <input class="form_input" type="email" id="mail" name="email" placeholder="Email Adresse" required>
+    </div>
+    <div class="label-input-combi">
+      <label class="form_text" for="username" hidden>Username</label>
+      <input class="form_input" type="text" id="username" name="username" placeholder="Username" required>
+    </div>
+
+
+    <div class="label-input-combi">
+      <p>Passwort muss eine Zahl, große sowie kleine Buchstaben beinhalten!</p>
+      <label class="form_text" for="password" hidden>Passwort</label>
+      <input
+        class="form_input"
+        type="password"
+        id="password"
+        minlength="10"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        placeholder="Passwort"
+        title="Muss eine Zahl, groß und klein Buchstabe beinhalten" required>
+    </div>
+    <div class="label-input-combi">
+      <label class="form_text" for="re_password" hidden>Passwort bestätigen</label>
+      <input
+        class="form_input"
+        type="password"
+        id="re_password"
+        minlength="10"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        placeholder="Passwort bestätigen"
+        title="Muss eine Zahl, groß und klein Buchstabe beinhalten" required>
+
+    </div>
+    <input class="form_submit" type="submit" name="registrieren" value="Registrieren">
+
+    <p class="form_text">
+      <a href="https://www.google.com">Anmelden!</a>
+    </p>
+    <p class="form_text">
+      <a href="https://www.google.com">Passwort vergessen?</a>
+    </p>
+  </form>
+
+</div>
+
+</body>
+</html>
